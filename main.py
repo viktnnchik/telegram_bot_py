@@ -53,7 +53,7 @@ def handle_choice_1(message):
     options = ['Команда № 1', 'Команда № 2', 'Команда № 3', 'Команда № 4', 'Команда № 5', 'Команда № 6', ]
     reply_markup = types.ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True)
     reply_markup.add(*options)
-    bot.reply_to(message, "Выберите один из вариантов для второго вопроса:", reply_markup=reply_markup)
+    bot.reply_to(message, "Выберите Вашу команду:", reply_markup=reply_markup)
 
 
 @bot.message_handler(
